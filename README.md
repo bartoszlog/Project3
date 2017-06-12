@@ -1,9 +1,11 @@
 # Project3
 Project#3
 
-JavaFX
+JavaFX ( not fully finished yet )
 
-Placeholder for a 3rd project during my bootcamp.
+Java project contains :
 
-Estimated end date : 13.06.2017
+Admin panel
+
+Connection between Database and Java showing fully editable table with employees in SecondPane.
 
