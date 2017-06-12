@@ -7,5 +7,5 @@ Java project contains :
 
 Admin panel
 
-Connection between Database and Java showing fully editable table with employees.
+Connection between Database and Java showing fully editable table with employees in SecondPane.
 
