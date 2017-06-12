@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="306.0" maxWidth="785.0" prefHeight="306.0" prefWidth="785.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="aplikacja.controller.LoginController">
+   <children>
+      <Button fx:id="enterOne" layoutX="113.0" layoutY="220.0" mnemonicParsing="false" onAction="#Login" prefHeight="39.0" prefWidth="75.0" text="Enter">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <PasswordField fx:id="passwordOne" layoutX="38.0" layoutY="162.0" promptText="Password">
+         <font>
+            <Font size="18.0" />
+         </font></PasswordField>
+      <TextField fx:id="textOne" layoutX="38.0" layoutY="98.0" promptText="UserName">
+         <font>
+            <Font size="18.0" />
+         </font></TextField>
+      <MenuButton fx:id="menuOne" layoutY="2.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="25.0" prefWidth="420.0" text="MenuButton" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Action 1" />
+          <MenuItem mnemonicParsing="false" text="Action 2" />
+        </items>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </MenuButton>
+      <Label fx:id="lebalStatus" layoutX="38.0" layoutY="48.0" prefHeight="39.0" prefWidth="260.0" text="Status" textFill="#ff0400" AnchorPane.bottomAnchor="219.0" AnchorPane.leftAnchor="38.0" AnchorPane.rightAnchor="487.0" AnchorPane.topAnchor="48.0">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <ImageView fx:id="imgOne" fitHeight="266.0" fitWidth="479.0" layoutX="318.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="1.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="39.0">
+         <image>
+            <Image url="@../../../../../../Downloads/DoJavyFX/login.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
