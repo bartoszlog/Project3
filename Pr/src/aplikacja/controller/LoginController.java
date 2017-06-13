@@ -4,6 +4,7 @@ package aplikacja.controller;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+import aplikacja.model.AppModel;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -12,22 +13,22 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.control.MenuButton;
+
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+
 import javafx.scene.image.ImageView;
+
 import javafx.stage.Stage;
 
-public class LoginController implements Initializable{
+public class LoginController extends AppModel implements Initializable{
 	
     @FXML
-    private Button enterOne;
+    private Button enterOne;  
     @FXML
-    private PasswordField passwordOne;
+    private PasswordField passwordOne;  
     @FXML
     private TextField textOne;
-    @FXML
-    private MenuButton menuOne;
     @FXML
     private Label lebalStatus;
     @FXML
@@ -41,8 +42,8 @@ public class LoginController implements Initializable{
 			Parent root = FXMLLoader.load(getClass().getResource("/aplikacja/view/SecondPane.fxml"));
 			Scene sce = new Scene(root,600,583);		
 			stg2.setScene(sce);
-			stg2.show();
-			
+			stg2.setResizable(false);
+			stg2.show();		
 		}
 	 else {
 		lebalStatus.setText("Login Failed");

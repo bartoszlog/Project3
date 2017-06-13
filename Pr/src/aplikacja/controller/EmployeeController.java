@@ -1,6 +1,7 @@
 package aplikacja.controller;
 
 
+
 import java.net.URL;
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -21,6 +22,8 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.image.ImageView;
+
 
 public class EmployeeController implements Initializable{
 
@@ -49,6 +52,8 @@ public class EmployeeController implements Initializable{
     private Button ButtonCommit;
     @FXML
     private TextField textFirstName;
+    @FXML
+    private ImageView imgTwo;
     @FXML
     private TextField textLastName;
     @FXML
@@ -215,11 +220,11 @@ public class EmployeeController implements Initializable{
         TableTwo.setItems(null);
         TableTwo.setItems(data);
     }   
+
           
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
-		db = new DbController();
-		
+		db = new DbController();	
 	}
 
 }
