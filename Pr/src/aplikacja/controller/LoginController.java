@@ -1,9 +1,7 @@
 package aplikacja.controller;
 
-
 import java.net.URL;
 import java.util.ResourceBundle;
-
 import aplikacja.model.AppModel;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -13,12 +11,9 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
-
 import javafx.scene.image.ImageView;
-
 import javafx.stage.Stage;
 
 public class LoginController extends AppModel implements Initializable{
@@ -34,7 +29,6 @@ public class LoginController extends AppModel implements Initializable{
     @FXML
     private ImageView imgOne;
 
-
 	public void Login(ActionEvent event) throws Exception{
 		if(textOne.getText().equals("admin") & passwordOne.getText().equals("admin123")){
 			lebalStatus.setText("Login Sucess");
@@ -48,13 +42,11 @@ public class LoginController extends AppModel implements Initializable{
 	 else {
 		lebalStatus.setText("Login Failed");
 	}
-}
-	
+}	
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
-
 		
-}
+	}
 }
 
 
